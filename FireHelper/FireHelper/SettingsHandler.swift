@@ -10,37 +10,37 @@ import Foundation
 import FirebaseCore
 import FirebaseFirestore
 
-protocol SettingsHandlerReceiveDelegate {
+public protocol SettingsHandlerReceiveDelegate {
     func receivedLocalObject(data: Data) -> Codable
     func receivedCloudObject(data: Dictionary<String, Any>) -> Codable
 }
 
-protocol SettingsHandlerDispatchDelegate {
+public protocol SettingsHandlerDispatchDelegate {
     func dispatchedLocalObject<T : Codable>(data: T) -> Data
     func dispatchedCloudObject<T : Codable>(data: T) -> Dictionary<String, Any>
 }
 
-enum DataSource {
+public enum DataSource {
     case local
     case cloud
 }
 
-class SettingsHandler {
+open class SettingsHandler {
     
-    static let `default` = SettingsHandler()
+    public static let `default` = SettingsHandler()
     
-    var collectionRef: CollectionReference!
-    var docRef: DocumentReference!
+    public var collectionRef: CollectionReference!
+    public var docRef: DocumentReference!
   
-    func configure() {
+    public func configure() {
         FirebaseApp.configure()
     }
     
-    func setReference(collectionName: String) {
+    public func setReference(collectionName: String) {
         self.collectionRef = Firestore.firestore().collection("\(collectionName)")
     }
     
-    func downloadData(source: DataSource, onCompletion: @escaping ([Any])->Void) {
+    public func downloadData(source: DataSource, onCompletion: @escaping ([Any])->Void) {
         
         if source == .local {
             var dataList = [Data]()
@@ -68,7 +68,7 @@ class SettingsHandler {
         }
     }
     
-    func saveData(dataSource: DataSource, localData: Data?, cloudData: [String: Any]?, filename: String) {
+    public func saveData(dataSource: DataSource, localData: Data?, cloudData: [String: Any]?, filename: String) {
         if dataSource == .local {
             guard let jsonData = localData else { return }
             let fileManager = FileManager.default
@@ -91,7 +91,7 @@ class SettingsHandler {
         }
     }
     
-    func deleteLocalPreset(named: String, dataSource: DataSource) {
+    public func deleteLocalPreset(named: String, dataSource: DataSource) {
         
         if dataSource == .local {
         let fileManager = FileManager.default
