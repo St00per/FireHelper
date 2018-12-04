@@ -10,12 +10,12 @@ import Foundation
 import FirebaseCore
 import FirebaseFirestore
 
-public protocol SettingsHandlerReceiveDelegate {
+public protocol FireHelperReceiveDelegate {
     func receivedLocalObject(data: Data) -> Codable
     func receivedCloudObject(data: Dictionary<String, Any>) -> Codable
 }
 
-public protocol SettingsHandlerDispatchDelegate {
+public protocol FireHelperDispatchDelegate {
     func dispatchedLocalObject<T : Codable>(data: T) -> Data
     func dispatchedCloudObject<T : Codable>(data: T) -> Dictionary<String, Any>
 }
@@ -25,9 +25,9 @@ public enum DataSource {
     case cloud
 }
 
-open class SettingsHandler {
+open class FireHelper {
     
-    public static let `default` = SettingsHandler()
+    public static let `default` = FireHelper()
     
     public var collectionRef: CollectionReference!
     public var docRef: DocumentReference!
