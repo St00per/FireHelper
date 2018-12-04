@@ -6,7 +6,7 @@ target 'FireHelper' do
   use_frameworks!
 
   # Pods for FireHelper
-	pod 'Firebase/Core'
-	pod 'Firebase/Firestore'
+	#pod 'Firebase/Core'
+	#pod 'Firebase/Firestore'
 
 end
