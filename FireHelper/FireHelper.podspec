@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author             = { "Shteffen" => "kirillshteffen@gmail.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/St00per/FireHelper.git", :tag => "1.0.0" }
-  s.source_files  = "FireHelper/FireHelper/**/*"
+  s.source_files  = "FireHelper/**/*"
 
   #s.exclude_files = "Classes/Exclude"
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-   s.dependency "Firebase/Core"
-   s.dependency "Firebase/Firestore"
+   #s.dependency "Firebase/Core"
+   #s.dependency "Firebase/Firestore"
    s.static_framework = true
 
 end
