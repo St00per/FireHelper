@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseCore
+import FirebaseFirestore
 
 protocol SettingsHandlerReceiveDelegate {
     func receivedLocalObject(data: Data) -> Codable
