@@ -91,7 +91,7 @@ open class FireHelper {
         }
     }
     
-    public func deleteLocalPreset(named: String, dataSource: DataSource) {
+    public func deleteLocalDocument(named: String, dataSource: DataSource) {
         
         if dataSource == .local {
         let fileManager = FileManager.default
