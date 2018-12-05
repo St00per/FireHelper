@@ -7,7 +7,7 @@ Installation
 
 2.Select iOS App
 
-3.Add your BundleID
+3.Add your App BundleID
 
 4.Receive GoogleService-Info.plist and add it to your xcode project
 
