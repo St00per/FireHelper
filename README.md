@@ -21,11 +21,14 @@ https://www.youtube.com/watch?v=rvxYRm6n_NM&t=103s&list=PL_NE75wlOdk_YjriXBFkUGA
 
 6. Add to your AppDelegate class in launch option func two next lines:
 
-FireHelper.default.configure() 
+```swift
+   FireHelper.default.configure() 
+```
 
 and 
-
+```swift
 FireHelper.default.setReference(collectionName: "YOUR COLLECTION NAME")
+```
 
 If your collection doesn't exist it will be created automatically
 
