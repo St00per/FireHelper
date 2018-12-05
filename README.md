@@ -27,6 +27,8 @@ and
 
 FireHelper.default.setReference(collectionName: "YOUR COLLECTION NAME")
 
+If your collection doesn't exist it will be created automatically
+
 7. Now you can use FireHelper.default as a singleton in all of your project
 
 For more FireHelper functionality, proceed to class public protocols and functions.
