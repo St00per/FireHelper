@@ -11,7 +11,7 @@ Installation
 
 4.Receive GoogleService-Info.plist and add it to your xcode project
 
-for more information about Firebase you can follow the next link:
+For more information about Firebase you can follow the next link:
 https://www.youtube.com/watch?v=iMkifTEaefE&t=146s
 After step 4 you can use only FireHelper
 
@@ -26,6 +26,8 @@ and
 FireHelper.default.setReference(collectionName: "YOUR COLLECTION NAME")
 
 7. Now you can use FireHelper.default as a singleton in all of your project
+
+For more FireHelper functionality, proceed to class public protocols and functions.
 
 
 usage example: https://github.com/St00per/SettingsLoader
