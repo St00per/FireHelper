@@ -11,8 +11,11 @@ Installation
 
  4.Receive GoogleService-Info.plist and add it to your xcode project
 
-For more information about Firebase you can follow the next link:
+For more information about Firebase you can follow the next links:
+
 https://www.youtube.com/watch?v=iMkifTEaefE&t=146s
+
+https://www.youtube.com/watch?v=rvxYRm6n_NM&t=103s&list=PL_NE75wlOdk_YjriXBFkUGA3OxPZM1cf4&index=11
 
 5. Import FireHelper pod
 
