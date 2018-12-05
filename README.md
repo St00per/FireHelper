@@ -3,13 +3,13 @@ Pod is helping to move data documents around firebase
 
 Installation
 
-1.Create New Firebase Project
+   1.Create New Firebase Project
 
-2.Select iOS App
+   2.Select iOS App
 
-3.Add your App BundleID
+   3.Add your App BundleID
 
-4.Receive GoogleService-Info.plist and add it to your xcode project
+ 4.Receive GoogleService-Info.plist and add it to your xcode project
 
 For more information about Firebase you can follow the next link:
 https://www.youtube.com/watch?v=iMkifTEaefE&t=146s
