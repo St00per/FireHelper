@@ -13,7 +13,6 @@ Installation
 
 For more information about Firebase you can follow the next link:
 https://www.youtube.com/watch?v=iMkifTEaefE&t=146s
-After step 4 you can use only FireHelper
 
 5. Import FireHelper pod
 
