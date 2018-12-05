@@ -1,5 +1,5 @@
 # FireHelper
-Pod is helping to move data documents around firebase
+Pod is helping to move data documents around your local storage and Firebase
 
 Installation
 
